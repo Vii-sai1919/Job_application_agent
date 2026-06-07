@@ -44,42 +44,83 @@ resume_tailor_task:
   expected_output: >
     A complete rewritten resume tailored for the role, formatted as clean text.
 
+
+
 cover_letter_task:
   description: >
     Write a cover letter for the "{role}" position at "{company}".
     Use the job requirements, company research, and tailored resume from previous tasks.
-    The letter must:
-    - Be exactly 3 paragraphs, no more
-    - Reference at least one specific company detail (recent news, product, value)
-    - Directly address the top 2-3 requirements from the job posting
-    - Sound human and specific, not templated
-    - End with a clear call to action
+
+    YOU MUST FOLLOW THESE RULES STRICTLY:
+    - Exactly 3 paragraphs, no more, no less
+    - Paragraph 1: Who you are and why this specific company excites you — reference ONE real specific detail from the company research (a product, initiative, or value — not generic praise)
+    - Paragraph 2: Your two strongest technical qualifications that directly match the top JD requirements — be specific, use numbers or outcomes where possible
+    - Paragraph 3: One sentence on what you bring beyond technical skills, then a clear call to action
+
+    DO NOT use filler phrases like "I am thrilled", "I am passionate", "I would be a great fit".
+    DO NOT exceed 250 words total.
+    DO NOT write anything before or after the letter itself.
   expected_output: >
-    A complete, personalised cover letter of exactly 3 paragraphs, ready to send.
+    A cover letter of exactly 3 paragraphs and under 250 words, ready to send.
+
 
 gap_analysis_task:
   description: >
     Compare the candidate's original resume against the job requirements for "{role}" at "{company}".
-    Provide:
-    1. Current Match Score (0-100%) — how well the original resume matches the JD
-    2. Optimized Match Score (0-100%) — projected score after applying the tailored resume and addressing gaps
-    3. Top 5 gaps — skills or experience missing from the candidate's profile ranked by importance
-    4. For each gap: one concrete action to address it (course, project, or certification)
-    5. Top 5 likely interview questions based on the JD and company culture
-    6. One suggested talking point per question drawn from the candidate's experience
+
+    YOU MUST RETURN EXACTLY THIS STRUCTURE — nothing more, nothing less:
+
+    MATCH SCORES
+    Current Match Score: [X]%
+    Optimized Match Score: [Y]%
+    Score Reasoning: [2 sentences explaining the scores]
+
+    TOP 5 GAPS
+    1. [Gap name]: [One sentence describing the gap]
+       Action: [One specific course, project, or certification to address it]
+    2. [Gap name]: [One sentence describing the gap]
+       Action: [One specific course, project, or certification to address it]
+    3. [Gap name]: [One sentence describing the gap]
+       Action: [One specific course, project, or certification to address it]
+    4. [Gap name]: [One sentence describing the gap]
+       Action: [One specific course, project, or certification to address it]
+    5. [Gap name]: [One sentence describing the gap]
+       Action: [One specific course, project, or certification to address it]
+
+    INTERVIEW PREP
+    Q1: [Question]
+    Talking point: [One sentence drawn from candidate's actual experience]
+    Q2: [Question]
+    Talking point: [One sentence drawn from candidate's actual experience]
+    Q3: [Question]
+    Talking point: [One sentence drawn from candidate's actual experience]
+    Q4: [Question]
+    Talking point: [One sentence drawn from candidate's actual experience]
+    Q5: [Question]
+    Talking point: [One sentence drawn from candidate's actual experience]
+
+    DO NOT write anything before or after this structure.
   expected_output: >
-    A structured gap report with match scores, ranked gaps with actions, and interview prep.
+    A structured gap report with match scores, 5 gaps with actions, and 5 interview questions with talking points.
+
 
 email_draft_task:
   description: >
     Draft a cold outreach email to a recruiter at "{company}" for the "{role}" position.
     Use all context from previous tasks.
-    STRICT RULES:
-    - Maximum 100 words for the email body, no exceptions
-    - One compelling subject line
-    - Reference exactly one specific thing about the company
-    - Mention the single strongest fit between the candidate and the role
-    - End with one clear, low-friction ask
-    Return ONLY the subject line and email body, nothing else.
+
+    YOU MUST FOLLOW THESE RULES STRICTLY — NO EXCEPTIONS:
+    - The email body must be 80 words or less. Count every word. Stop writing when you hit 80.
+    - One subject line only
+    - Mention ONE specific fact about {company} from the research — not generic praise
+    - State ONE reason the candidate is a strong fit
+    - End with ONE simple ask — a call, a chat, a reply
+
+    FORMAT YOUR RESPONSE EXACTLY LIKE THIS:
+    Subject: [your subject line here]
+
+    [your email body here — 80 words maximum]
+
+    DO NOT write anything else. No preamble, no explanation, no "here is the email".
   expected_output: >
-    A subject line and an email body of maximum 100 words, ready to send to a recruiter.
+    A subject line followed by an email body of 80 words or less. Nothing else.
