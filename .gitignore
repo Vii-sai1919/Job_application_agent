@@ -1,0 +1,18 @@
+# Environment
+.env
+venv/
+
+# Outputs and personal files
+outputs/
+resume.pdf
+temp_resume_*.pdf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+
+# crewAI
+*.db
+*.sqlite

@@ -1,0 +1,85 @@
+job_research_task:
+  description: >
+    Search for the current job posting for the role "{role}" at "{company}".
+    Extract and return:
+    - The full list of required skills and qualifications
+    - Key responsibilities
+    - Any preferred skills or nice-to-haves
+    - Important keywords used in the posting
+    If you cannot find the exact posting, find the most similar recent one.
+  expected_output: >
+    A structured summary of the job requirements, responsibilities, and keywords.
+
+company_research_task:
+  description: >
+    Research "{company}" thoroughly. Find and return:
+    - What the company does and its core mission
+    - Engineering culture and values
+    - Current tech stack
+    - Recent news or product launches in the last 6 months
+    - Any notable facts that would impress a recruiter if referenced in a cover letter
+  expected_output: >
+    A detailed company profile covering culture, stack, recent news, and talking points.
+
+hire_pattern_task:
+  description: >
+    Search the web for people recently hired as {role} at {company}. Find at least 3 profiles.
+    Identify common patterns:
+    - Educational backgrounds
+    - Prior experience types
+    - Common skills and certifications
+    - Career trajectories that led to this role
+  expected_output: >
+    A summary of hiring patterns and what profile traits are most common for this role at this company.
+
+resume_tailor_task:
+  description: >
+    Read the candidate's resume from this file path: {resume_path}
+    Using the job requirements and company research from previous tasks, rewrite the resume to:
+    - Incorporate important keywords from the job posting naturally
+    - Bring the most relevant experience to the top
+    - Reframe bullet points to match what the company is looking for
+    - Keep it honest — do not invent experience
+    Return the complete rewritten resume as clean text.
+  expected_output: >
+    A complete rewritten resume tailored for the role, formatted as clean text.
+
+cover_letter_task:
+  description: >
+    Write a cover letter for the "{role}" position at "{company}".
+    Use the job requirements, company research, and tailored resume from previous tasks.
+    The letter must:
+    - Be exactly 3 paragraphs, no more
+    - Reference at least one specific company detail (recent news, product, value)
+    - Directly address the top 2-3 requirements from the job posting
+    - Sound human and specific, not templated
+    - End with a clear call to action
+  expected_output: >
+    A complete, personalised cover letter of exactly 3 paragraphs, ready to send.
+
+gap_analysis_task:
+  description: >
+    Compare the candidate's original resume against the job requirements for "{role}" at "{company}".
+    Provide:
+    1. Current Match Score (0-100%) — how well the original resume matches the JD
+    2. Optimized Match Score (0-100%) — projected score after applying the tailored resume and addressing gaps
+    3. Top 5 gaps — skills or experience missing from the candidate's profile ranked by importance
+    4. For each gap: one concrete action to address it (course, project, or certification)
+    5. Top 5 likely interview questions based on the JD and company culture
+    6. One suggested talking point per question drawn from the candidate's experience
+  expected_output: >
+    A structured gap report with match scores, ranked gaps with actions, and interview prep.
+
+email_draft_task:
+  description: >
+    Draft a cold outreach email to a recruiter at "{company}" for the "{role}" position.
+    Use all context from previous tasks.
+    STRICT RULES:
+    - Maximum 100 words for the email body, no exceptions
+    - One compelling subject line
+    - Reference exactly one specific thing about the company
+    - Mention the single strongest fit between the candidate and the role
+    - End with one clear, low-friction ask
+    Return ONLY the subject line and email body, nothing else.
+  expected_output: >
+    A subject line and an email body of maximum 100 words, ready to send to a recruiter.
