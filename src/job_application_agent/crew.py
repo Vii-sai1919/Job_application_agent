@@ -125,7 +125,7 @@ class JobApplicationCrew():
         )
 
 
-def save_outputs(crew_instance):
+def save_outputs(crew_instance, candidate_name="Candidate"):
     os.makedirs("outputs", exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     
@@ -134,15 +134,28 @@ def save_outputs(crew_instance):
         "tailored_resume", "cover_letter", "gap_report", "recruiter_email"
     ]
     
+    from src.job_application_agent.pdf_generator import generate_resume_pdf, generate_cover_letter_pdf
+
     for i, task in enumerate(crew_instance.tasks):
         if task.output:
+            content = str(task.output.raw)
             filename = f"outputs/{timestamp}_{task_names[i]}.txt"
             with open(filename, "w") as f:
-                f.write(str(task.output.raw))
+                f.write(content)
             print(f"✅ Saved: {filename}")
 
+            # Generate PDFs for resume and cover letter
+            if task_names[i] == "tailored_resume":
+                pdf_path = f"outputs/{timestamp}_tailored_resume.pdf"
+                generate_resume_pdf(content, pdf_path, candidate_name)
+                print(f"✅ Saved PDF: {pdf_path}")
 
-def run_crew(company, role, resume_path, hire_profiles=None):
+            if task_names[i] == "cover_letter":
+                pdf_path = f"outputs/{timestamp}_cover_letter.pdf"
+                generate_cover_letter_pdf(content, pdf_path, candidate_name)
+                print(f"✅ Saved PDF: {pdf_path}")
+
+def run_crew(company, role, resume_path, hire_profiles=None, candidate_name="Candidate"):
     inputs = {
         "company": company,
         "role": role,
@@ -152,5 +165,5 @@ def run_crew(company, role, resume_path, hire_profiles=None):
     
     job_crew = JobApplicationCrew()
     result = job_crew.crew().kickoff(inputs=inputs)
-    save_outputs(job_crew)
+    save_outputs(job_crew, candidate_name)
     return result

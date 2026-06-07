@@ -149,6 +149,10 @@ with col2:
     role = st.text_input("Role", placeholder="e.g. Software Engineer Intern", label_visibility="collapsed")
 
 st.markdown("<br>", unsafe_allow_html=True)
+st.markdown('<div class="section-label">Your Details</div>', unsafe_allow_html=True)
+candidate_name = st.text_input("Full Name", placeholder="e.g. Moh Bhargava", label_visibility="collapsed")
+
+st.markdown("<br>", unsafe_allow_html=True)
 st.markdown('<div class="section-label">Your Resume</div>', unsafe_allow_html=True)
 resume_file = st.file_uploader("Upload PDF", type=["pdf"], label_visibility="collapsed")
 
@@ -160,10 +164,6 @@ hire_profiles = st.text_area(
     height=80,
     label_visibility="collapsed"
 )
-
-st.markdown("<br>", unsafe_allow_html=True)
-run = st.button("Run Agent Crew →", use_container_width=False)
-
 # --- RUN ---
 if run:
     if not company or not role:
@@ -193,8 +193,9 @@ if run:
                     company=company,
                     role=role,
                     resume_path=resume_path,
-                    hire_profiles=hire_profiles if hire_profiles else None
-                )
+                    hire_profiles=hire_profiles if hire_profiles else None,
+                    candidate_name=candidate_name if candidate_name else "Candidate"
+                )           
                 output_files = sorted([
                     f for f in os.listdir("outputs") if f.endswith(".txt")
                 ], reverse=True)
@@ -233,18 +234,34 @@ if st.session_state.results_ready and st.session_state.output_prefix:
     latest = [f for f in output_files if st.session_state.output_prefix in f]
 
     for filename in latest:
-        if "full_summary" in filename:
-            continue
-        for key, (label, expanded) in file_labels.items():
-            if key in filename:
-                with st.expander(label, expanded=expanded):
-                    with open(f"outputs/{filename}", "r") as f:
-                        content = f.read()
-                    st.markdown(content)
+    if "full_summary" in filename:
+        continue
+    for key, (label, expanded) in file_labels.items():
+        if key in filename and filename.endswith(".txt"):
+            with st.expander(label, expanded=expanded):
+                with open(f"outputs/{filename}", "r") as f:
+                    content = f.read()
+                st.markdown(content)
+
+                col_a, col_b = st.columns(2)
+                with col_a:
                     st.download_button(
-                        f"⬇️ Download",
+                        "⬇️ Download as text",
                         data=content,
                         file_name=filename,
                         mime="text/plain",
                         key=filename
                     )
+                # Check if PDF version exists
+                with col_b:
+                    pdf_filename = filename.replace(".txt", ".pdf")
+                    if os.path.exists(f"outputs/{pdf_filename}"):
+                        with open(f"outputs/{pdf_filename}", "rb") as f:
+                            pdf_data = f.read()
+                        st.download_button(
+                            "⬇️ Download as PDF",
+                            data=pdf_data,
+                            file_name=pdf_filename,
+                            mime="application/pdf",
+                            key=pdf_filename
+                        )
