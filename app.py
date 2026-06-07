@@ -9,112 +9,25 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
-# --- CUSTOM CSS ---
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 * { font-family: 'DM Sans', sans-serif; }
-
 .main { background-color: #0f0f0f; }
 .block-container { padding: 2rem 3rem; max-width: 1100px; }
-
-.hero-title {
-    font-family: 'DM Serif Display', serif;
-    font-size: 3.2rem;
-    color: #f5f0e8;
-    line-height: 1.1;
-    margin-bottom: 0.3rem;
-}
-.hero-sub {
-    font-size: 1rem;
-    color: #888;
-    margin-bottom: 2rem;
-    letter-spacing: 0.02em;
-}
-.section-label {
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: #c8a96e;
-    margin-bottom: 0.5rem;
-}
-.status-box {
-    background: #1a1a1a;
-    border: 1px solid #2a2a2a;
-    border-left: 3px solid #c8a96e;
-    border-radius: 8px;
-    padding: 1.2rem 1.5rem;
-    margin: 1rem 0;
-    color: #ccc;
-    font-size: 0.9rem;
-}
-.agent-badge {
-    display: inline-block;
-    background: #1e1e1e;
-    border: 1px solid #333;
-    border-radius: 20px;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.75rem;
-    color: #c8a96e;
-    margin: 0.2rem;
-}
-.result-header {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.6rem;
-    color: #f5f0e8;
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid #2a2a2a;
-}
-.stButton > button {
-    background: #c8a96e !important;
-    color: #0f0f0f !important;
-    border: none !important;
-    border-radius: 6px !important;
-    font-weight: 600 !important;
-    font-size: 0.9rem !important;
-    letter-spacing: 0.05em !important;
-    padding: 0.6rem 1.5rem !important;
-    transition: all 0.2s !important;
-}
-.stButton > button:hover {
-    background: #d4b97e !important;
-    transform: translateY(-1px) !important;
-}
-.stTextInput > div > div > input,
-.stTextArea > div > div > textarea {
-    background-color: #1a1a1a !important;
-    border: 1px solid #2a2a2a !important;
-    border-radius: 6px !important;
-    color: #f5f0e8 !important;
-    font-family: 'DM Sans', sans-serif !important;
-}
-.stTextInput > div > div > input:focus,
-.stTextArea > div > div > textarea:focus {
-    border-color: #c8a96e !important;
-    box-shadow: 0 0 0 1px #c8a96e33 !important;
-}
-.stFileUploader {
-    background: #1a1a1a !important;
-    border: 1px dashed #333 !important;
-    border-radius: 6px !important;
-}
-.stExpander {
-    background: #1a1a1a !important;
-    border: 1px solid #2a2a2a !important;
-    border-radius: 8px !important;
-}
-.stSuccess {
-    background: #0d2818 !important;
-    border: 1px solid #1a4a2a !important;
-    color: #4caf82 !important;
-}
-.stError {
-    background: #2a0d0d !important;
-    border: 1px solid #4a1a1a !important;
-}
+.hero-title { font-family: 'DM Serif Display', serif; font-size: 3.2rem; color: #f5f0e8; line-height: 1.1; margin-bottom: 0.3rem; }
+.hero-sub { font-size: 1rem; color: #888; margin-bottom: 2rem; letter-spacing: 0.02em; }
+.section-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: #c8a96e; margin-bottom: 0.5rem; }
+.status-box { background: #1a1a1a; border: 1px solid #2a2a2a; border-left: 3px solid #c8a96e; border-radius: 8px; padding: 1.2rem 1.5rem; margin: 1rem 0; color: #ccc; font-size: 0.9rem; }
+.agent-badge { display: inline-block; background: #1e1e1e; border: 1px solid #333; border-radius: 20px; padding: 0.25rem 0.75rem; font-size: 0.75rem; color: #c8a96e; margin: 0.2rem; }
+.result-header { font-family: 'DM Serif Display', serif; font-size: 1.6rem; color: #f5f0e8; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid #2a2a2a; }
+.stButton > button { background: #c8a96e !important; color: #0f0f0f !important; border: none !important; border-radius: 6px !important; font-weight: 600 !important; font-size: 0.9rem !important; letter-spacing: 0.05em !important; padding: 0.6rem 1.5rem !important; transition: all 0.2s !important; }
+.stButton > button:hover { background: #d4b97e !important; transform: translateY(-1px) !important; }
+.stTextInput > div > div > input, .stTextArea > div > div > textarea { background-color: #1a1a1a !important; border: 1px solid #2a2a2a !important; border-radius: 6px !important; color: #f5f0e8 !important; font-family: 'DM Sans', sans-serif !important; }
+.stTextInput > div > div > input:focus, .stTextArea > div > div > textarea:focus { border-color: #c8a96e !important; box-shadow: 0 0 0 1px #c8a96e33 !important; }
+.stFileUploader { background: #1a1a1a !important; border: 1px dashed #333 !important; border-radius: 6px !important; }
+.stExpander { background: #1a1a1a !important; border: 1px solid #2a2a2a !important; border-radius: 8px !important; }
 div[data-testid="stMarkdownContainer"] p { color: #ccc; line-height: 1.7; }
 label { color: #aaa !important; font-size: 0.85rem !important; }
 </style>
@@ -132,7 +45,6 @@ if "error" not in st.session_state:
 st.markdown('<div class="hero-title">Job Application<br><i>Agent</i></div>', unsafe_allow_html=True)
 st.markdown('<div class="hero-sub">Powered by crewAI + Ollama &nbsp;·&nbsp; Runs entirely on your machine &nbsp;·&nbsp; 7 autonomous agents</div>', unsafe_allow_html=True)
 
-# Agent badges
 agents = ["Job Researcher", "Company Analyst", "Hire Pattern Analyst", "Resume Tailor", "Cover Letter Writer", "Gap Analyst", "Email Drafter"]
 badges = " ".join([f'<span class="agent-badge">{a}</span>' for a in agents])
 st.markdown(badges, unsafe_allow_html=True)
@@ -164,6 +76,10 @@ hire_profiles = st.text_area(
     height=80,
     label_visibility="collapsed"
 )
+
+st.markdown("<br>", unsafe_allow_html=True)
+run = st.button("Run Agent Crew →", use_container_width=False)
+
 # --- RUN ---
 if run:
     if not company or not role:
@@ -195,7 +111,7 @@ if run:
                     resume_path=resume_path,
                     hire_profiles=hire_profiles if hire_profiles else None,
                     candidate_name=candidate_name if candidate_name else "Candidate"
-                )           
+                )
                 output_files = sorted([
                     f for f in os.listdir("outputs") if f.endswith(".txt")
                 ], reverse=True)
@@ -234,34 +150,33 @@ if st.session_state.results_ready and st.session_state.output_prefix:
     latest = [f for f in output_files if st.session_state.output_prefix in f]
 
     for filename in latest:
-    if "full_summary" in filename:
-        continue
-    for key, (label, expanded) in file_labels.items():
-        if key in filename and filename.endswith(".txt"):
-            with st.expander(label, expanded=expanded):
-                with open(f"outputs/{filename}", "r") as f:
-                    content = f.read()
-                st.markdown(content)
+        if "full_summary" in filename:
+            continue
+        for key, (label, expanded) in file_labels.items():
+            if key in filename and filename.endswith(".txt"):
+                with st.expander(label, expanded=expanded):
+                    with open(f"outputs/{filename}", "r") as f:
+                        content = f.read()
+                    st.markdown(content)
 
-                col_a, col_b = st.columns(2)
-                with col_a:
-                    st.download_button(
-                        "⬇️ Download as text",
-                        data=content,
-                        file_name=filename,
-                        mime="text/plain",
-                        key=filename
-                    )
-                # Check if PDF version exists
-                with col_b:
-                    pdf_filename = filename.replace(".txt", ".pdf")
-                    if os.path.exists(f"outputs/{pdf_filename}"):
-                        with open(f"outputs/{pdf_filename}", "rb") as f:
-                            pdf_data = f.read()
+                    col_a, col_b = st.columns(2)
+                    with col_a:
                         st.download_button(
-                            "⬇️ Download as PDF",
-                            data=pdf_data,
-                            file_name=pdf_filename,
-                            mime="application/pdf",
-                            key=pdf_filename
+                            "⬇️ Download as text",
+                            data=content,
+                            file_name=filename,
+                            mime="text/plain",
+                            key=filename
                         )
+                    with col_b:
+                        pdf_filename = filename.replace(".txt", ".pdf")
+                        if os.path.exists(f"outputs/{pdf_filename}"):
+                            with open(f"outputs/{pdf_filename}", "rb") as f:
+                                pdf_data = f.read()
+                            st.download_button(
+                                "⬇️ Download as PDF",
+                                data=pdf_data,
+                                file_name=pdf_filename,
+                                mime="application/pdf",
+                                key=pdf_filename
+                            )
