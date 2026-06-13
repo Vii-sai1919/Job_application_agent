@@ -102,9 +102,14 @@ if run:
         </div>
         """, unsafe_allow_html=True)
 
-        with st.spinner("Agents working..."):
+        with st.status("Running agent crew...", expanded=True) as status:
+            st.write("🔍 Job Researcher — finding the job posting...")
             try:
                 from src.job_application_agent.crew import run_crew
+
+                # We'll update status as crew runs
+                status.update(label="🏢 Company Analyst — researching the company...")
+                
                 run_crew(
                     company=company,
                     role=role,
@@ -112,14 +117,19 @@ if run:
                     hire_profiles=hire_profiles if hire_profiles else None,
                     candidate_name=candidate_name if candidate_name else "Candidate"
                 )
+
                 output_files = sorted([
                     f for f in os.listdir("outputs") if f.endswith(".txt")
                 ], reverse=True)
                 if output_files:
                     st.session_state.output_prefix = output_files[0][:15]
                     st.session_state.results_ready = True
+                
+                status.update(label="✅ All agents completed!", state="complete")
+
             except Exception as e:
                 st.session_state.error = str(e)
+                status.update(label="❌ Something went wrong", state="error")
             finally:
                 if os.path.exists(resume_path):
                     os.remove(resume_path)
