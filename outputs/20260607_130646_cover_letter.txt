@@ -1,0 +1,22 @@
+Here is the rewritten cover letter:
+
+Dear Hiring Manager,
+
+I am thrilled to apply for the Software Engineer Intern position at Google, where I can leverage my passion for software development, machine learning, and cloud computing to contribute to the company's cutting-edge technology. As a highly motivated computer science graduate with a strong foundation in programming languages, data structures, and algorithms, I am confident that I would be an excellent fit for this role.
+
+As a software engineer intern at ReFind – Campus peer-to-peer Marketplace, I successfully designed and implemented a Dynamic Request Module using Google Cloud Platform's App Engine to increase platform liquidity. This experience not only honed my skills in cloud computing but also taught me the importance of scalability and reliability. Moreover, I have been actively involved in designing and developing websites, including the ReFind website landing page, which has allowed me to refine my web development skills using HTML/CSS, Figma, and Google Cloud Functions.
+
+What draws me most about this role at Google is the opportunity to work with cutting-edge technology, collaborate with top talent, and contribute to innovative projects. I am particularly excited about the prospect of exploring machine learning frameworks, such as TensorFlow, and developing applications on Google Cloud Platform. Additionally, I am impressed by Google's commitment to diversity and inclusion, which aligns with my own values of creating an inclusive environment for people from all backgrounds.
+
+To address the key requirements of this role, I would like to highlight the following skills and experiences:
+
+* Proficiency in Python programming language, with experience in using machine learning frameworks such as TensorFlow
+* Experience with cloud platforms, including Google Cloud Platform (GCP)
+* Strong understanding of web development frameworks and databases
+* Familiarity with Agile development methodologies
+
+I am confident that my technical expertise, combined with my passion for innovation and collaboration, make me an ideal candidate for this Software Engineer Intern position at Google. I would be thrilled to discuss how my skills align with the company's requirements further.
+
+Thank you for considering my application. I look forward to the opportunity to contribute to the success of Google as a software engineer intern.
+
+Sincerely,

@@ -1,0 +1,32 @@
+Here is the rewritten cold outreach email to a recruiter at "Google" for the "Software Engineer Intern" position:
+
+**Subject:** Excited to Pursue Software Engineer Intern Role at Google
+
+Dear Hiring Manager,
+
+I am thrilled to apply for the Software Engineer Intern position at Google, where I can leverage my passion for software development, machine learning, and cloud computing to contribute to the company's cutting-edge technology. As a highly motivated computer science graduate with a strong foundation in programming languages, data structures, and algorithms, I am confident that I would be an excellent fit for this role.
+
+Notably, Google's focus on user experience and innovation resonates deeply with me. I am impressed by the company's commitment to diversity and inclusion, which aligns with my own values of creating an inclusive environment for people from all backgrounds. I believe my technical expertise, combined with my passion for innovation and collaboration, make me an ideal candidate for this position.
+
+In particular, I would like to highlight that my experience designing a dynamic request module using Google Cloud Platform's App Engine and implementing a responsive interface using HTML/CSS with Figma demonstrates my familiarity with cloud platforms and web development frameworks. Additionally, my proficiency in Python programming language, familiarity with Agile development methodologies, and knowledge of data structures and algorithms aligns well with the job requirements.
+
+I would be thrilled to discuss how my skills align with the company's requirements further. Please feel free to contact me at your convenience to arrange an interview or call.
+
+Thank you for considering my application.
+
+Best regards,
+
+
+**Subject:** Excited to Pursue Software Engineer Intern Role at Google**
+
+Dear Hiring Manager,
+
+As a highly motivated computer science graduate, I am excited to apply for the Software Engineer Intern position at Google where my passion for software development, machine learning, and cloud computing can contribute to cutting-edge technology.
+
+Google's focus on user experience and innovation resonates deeply with me. Its commitment to diversity and inclusion aligns with my own values of creating an inclusive environment for people from all backgrounds.
+
+Notably, I designed a dynamic request module using Google Cloud Platform's App Engine, demonstrating my familiarity with cloud platforms. Plus, proficient in Python programming language, familiar with Agile development methodologies & knowledge of data structures & algorithms - great match!
+
+Let me discuss how these skills aligning.
+
+Best regards,

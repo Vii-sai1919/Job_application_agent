@@ -1,0 +1,80 @@
+**Gap Analysis Report for Software Engineering Summer Intern at Google**
+
+**Match Scores:**
+
+* **Current Match Score:** 72%
+*   **JD Requirements:** 
+    *   Currently pursuing a Bachelor's degree in Computer Science or related field (Met)
+    *   Strong programming skills in languages such as Java, Python, and C++ (Met)
+    *   Experience with Git and version control systems (Partial - Lack of project experience)
+    *   Excellent problem-solving skills and attention to detail (Met)
+    *   Ability to work effectively in a team environment (Met)
+* **Current Resume Strengths:** 
+    *   Course specialization: Computer Science (Meets requirements for Bachelor's degree in CS or related field)
+    *   Problem-solving: Strong background in data structures and algorithms (Partial - Lack of industry experience)
+    *   Web development: HTML, CSS, responsive front-end development (Underdeveloped)
+
+**Optimized Match Score:** 85%
+
+*   The candidate has met most of the JD requirements except for project experience with Git version control systems. They have expressed a strong interest in contributing to various technical projects and participate regularly in hackathons.
+
+**Top 5 Gaps:** 
+
+1.  **Lack of Project Experience:**
+    *   Concrete action to address it:
+        *   Take on individual projects that focus on improving coding skills, problem-solving abilities, and teamwork experience.
+        *   Participate in coding challenges or hackathons for students to enhance expertise.
+2.  **Limited Industry Experience:**
+    *   Concrete action to address it:
+        *   Engage with internships, job shadowing, or remote work opportunities that allow gaining industry exposure.
+        *   Attend tech conferences and meetups where you could be networking with professionals in your desired field.
+3.  **Desire for Continuous Learning:**
+    *   Concrete action to address it:
+        *   Pursue online courses like Coursera, edX or Codecademy.
+        *   Read relevant books, articles, and follow technical blogs in the fields of computer science.
+    *   Join online forums related to your area of interest to gain knowledge from others (for example GitHub for Python development)
+4.  **Communication Skills:**
+    *   Concrete action to address it:
+        *   Participate in team projects that emphasize written communication and documentation
+        *   Take a course or workshop on professional writing, particularly for STEM fields.
+5.  **Collaboration and Teamwork Experience:**
+    *   Concrete action to address it:
+        *   Join study groups or collaborative coding projects to develop group work skills
+        *   Participate in campus events that have team-oriented goals.
+
+**Interview Preparation Topics:**
+
+1.  **Common Software Engineering Interview Questions:** 
+    *   Write a program in Python that prints out the first n terms of a series.
+2.  **Design Principles and Problem-Solving Techniques:**
+    *   Design patterns (Singleton, Factory, etc.)
+    *   Data structures - arrays, linked lists, stacks, queues, hash tables
+3.  **System Design:**
+    *   Architecture design for a microservice-based system.
+    *   System scalability solutions that involve changing the configuration of one component to accommodate an increase in the other side.
+
+**Potential Questions and Talking Points for Interview:**
+
+1.  Company-Related:
+
+    *   What makes you want to work at Google?
+        *   Emphasize their emphasis on innovation, collaboration, and employee perks
+2.  Technical Questions 
+
+    *   Write a Python program that implements Binary Search.
+        *   Explain binary search algorithm, and how it differs from linear search.
+
+    *   An array of n elements is given. Describe an efficient method to find 1’s.
+        *   Describe the significance when a binary digit becomes zero. Analyze the time complexity for that condition.
+
+3.  Problem Solving and Architecture
+
+    *   We are tasked with designing a scalable system for online shopping platforms.
+        *   Discuss considerations involving load balancing, caching, and scalability factors in your design.
+
+4.  Behavioral Questions 
+
+    *   Can you describe a situation where you had to troubleshoot code issues?
+        *   Highlight collaboration strategies over email support or documentation.
+
+**Final Recommendation:** Provide concrete actions for addressing gaps in education, technical skills, soft skills (collaboration), personal interest (company culture and research projects at university etc) and engage with the field of Computer Science through professional organizations, coding boot camps, hackathons etc..

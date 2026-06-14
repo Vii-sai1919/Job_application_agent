@@ -1,0 +1,35 @@
+Based on the search results, I was able to find a job posting for the role of "Software Engineer Intern" at Google. Here is a structured summary of the job requirements, responsibilities, and keywords:
+
+**Required Skills and Qualifications:**
+
+* Bachelor's degree in Computer Science or related field
+* Proficiency in Java, C++, or Python programming languages
+* Experience with cloud platforms such as Google Cloud Platform (GCP)
+* Knowledge of web development frameworks and databases
+* Familiarity with Agile development methodologies
+
+**Key Responsibilities:**
+
+* Design, develop, test, and deploy software applications on GCP
+* Collaborate with full-time engineers to work on real-world projects
+* Participate in code reviews and contribute to the improvement of the codebase
+* Develop and maintain technical documentation for projects
+* Provide feedback and support to colleagues on technical topics
+
+**Preferred Skills or Nice-to-Haves:**
+
+* Experience with machine learning frameworks such as TensorFlow or PyTorch
+* Familiarity with containerization using Docker
+* Knowledge of DevOps tools such as Jenkins or GitLab CI/CD
+* Experience with design patterns and software engineering principles
+* Strong understanding of computer systems, data structures, and algorithms
+
+**Important Keywords:**
+
+* Google Cloud Platform (GCP)
+* Java, C++, Python programming languages
+* Agile development methodologies
+* Web development frameworks and databases
+* Machine learning frameworks such as TensorFlow or PyTorch
+* Containerization using Docker
+* DevOps tools such as Jenkins or GitLab CI/CD

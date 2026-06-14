@@ -1,0 +1,18 @@
+ MATCH SCORES Current Match Score: 40% Optimized Match Score: 60% Score Reasoning: The current match score is based on the presence of relevant keywords from the job posting in Moh Bhargava's resume, but lacks specificity and depth. However, with added emphasis on his experience and skills, the optimized match score is higher, reflecting a stronger alignment with Google's requirements.
+TOP 5 GAPS 1. **Academic Background:** Insufficient direct experience with software development tools and technologies, such as Google Cloud Platform. Action: Take online courses or certifications in machine learning, data analysis, or other technical areas to enhance skills.
+2. **Programming Language Proficiency:** Limited experience with programming languages used by Google, including Java and Python. Action: Participate in coding challenges or projects that utilize these languages to build familiarity and confidence.
+3. **Team Collaboration Experience:** Missing significant team collaboration or leadership experience outside of personal projects or school settings. Action: Seek out opportunities to volunteer, participate in hackathons, or freelance work to develop teamwork and communication skills.
+4. **Research or Development Experience:** Limited direct involvement with research or development projects that leverage technical skills. Action: Engage in academic or extracurricular research, contribute to open-source projects, or create a personal project related to Google's technologies.
+5. **Industry Knowledge:** Insufficient knowledge of Google's products and services beyond general awareness. Action: Stay updated on recent news and product launches from Google; explore its mission, culture, and values.
+
+INTERVIEW PREP Q1: What motivates you to work with technology that impacts millions of people around the world? Talking point: I'm inspired by Google's commitment to using technology for societal good and its pursuit of innovation, which allows me to develop solutions on a global scale.
+
+Q2: How do you maintain adaptability in the face of changing priorities or new challenges within your team? Talking point: As Captain of my school powerlifting team, I've learned to remain flexible and focus on improving when faced with setbacks or unexpected requirements; this preparedness helps me efficiently adjust to different team dynamics.
+
+Q3: Can you describe a situation where you applied data-driven insights to drive business decisions or improve customer experiences? Talking point: In one of my personal programming projects, I utilized data analysis techniques to optimize the performance of an interactive web application, thereby enhancing user efficiency and engagement.
+
+Q4: How do you handle conflicting opinions or team members with differing work styles within a collaborative environment? Talking point: In group settings like hackathons or team events, my willingness to listen actively and present constructive feedback has helped resolve disagreements and foster unity among team members.
+
+Q5: What sets your unique perspective as an intern at Google?
+ 
+ Talking point: With experience leading cross-functional projects, honing skills in multiple technologies, and continuously seeking knowledge advancements, I believe I can contribute a distinctive viewpoint on how to innovate and organize complex systems to better the lives of millions worldwide.

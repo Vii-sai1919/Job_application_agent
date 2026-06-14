@@ -1,0 +1,15 @@
+Dear Hiring Manager,
+
+I am thrilled to apply for the Software Engineering Summer Intern position at Google, where I can leverage my passion for software engineering and collaboration with like-minded individuals. With a strong background in computer science and a proven track record of delivering impactful projects, I am confident that I can make a meaningful contribution to your team.
+
+As a computer science graduate pursuing a Bachelor's degree at BITS Hyderabad, I have had the opportunity to develop a solid foundation in programming languages such as C, C++, and Python. My experience with Git and version control systems has allowed me to effectively manage code repositories and collaborate with teammates. Additionally, my problem-solving skills and attention to detail have enabled me to deliver high-quality software solutions that meet project requirements.
+
+I am particularly drawn to Google's commitment to innovation and collaboration, as well as its emphasis on transparency and authenticity in the workplace. I believe that these values align perfectly with my own approach to engineering and team work. Furthermore, I am excited about the prospect of working with cutting-edge technologies such as cloud computing, machine learning, and artificial intelligence, which have been instrumental in shaping Google's products and services.
+
+As someone who has participated in hackathons and coding competitions, I have developed a strong understanding of data structures and algorithms, which would enable me to make significant contributions to your team. My experience with Figma and UI/UX design has also allowed me to create high-fidelity prototypes that meet user needs. Moreover, my work on the ReFind peer-to-peer marketplace project has helped me develop skills in architecture, development, and testing of software systems.
+
+I am impressed by Google's dedication to continuous learning and career development, as well as its commitment to diversity and inclusion in the workplace. These values align perfectly with my own approach to professional growth and team work. I am excited about the prospect of joining a team that shares these values and is committed to making a meaningful impact on society.
+
+Thank you for considering my application. I would welcome the opportunity to discuss how my skills and experience align with Google's mission and goals. Please do not hesitate to contact me at [f20240845@hydney.bits-pilani.ac.in](mailto:f20240845@hydney.bits-pilani.ac.in) or +91-8882480750.
+
+Sincerely,
