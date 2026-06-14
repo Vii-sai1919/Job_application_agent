@@ -3,7 +3,6 @@
 venv/
 
 # Outputs and personal files
-outputs/
 resume.pdf
 temp_resume_*.pdf
 
